@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha com Questionário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Jogo da Velha com Desafio de Matemática</h1>
+
+  <div id="quiz">
+    <h2>Responda para jogar!</h2>
+    <p id="question"></p>
+    <div id="options"></div>
+    <button id="submit" onclick="checkAnswer()">Responder</button>
+    <p id="feedback"></p>
+  </div>
+
+  <div id="game">
+    <div class="board">
+      <div class="cell" onclick="makeMove(0)"></div>
+      <div class="cell" onclick="makeMove(1)"></div>
+      <div class="cell" onclick="makeMove(2)"></div>
+      <div class="cell" onclick="makeMove(3)"></div>
+      <div class="cell" onclick="makeMove(4)"></div>
+      <div class="cell" onclick="makeMove(5)"></div>
+      <div class="cell" onclick="makeMove(6)"></div>
+      <div class="cell" onclick="makeMove(7)"></div>
+      <div class="cell" onclick="makeMove(8)"></div>
+    </div>
+    <p id="winner"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
